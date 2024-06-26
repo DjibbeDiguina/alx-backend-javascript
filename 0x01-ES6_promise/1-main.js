@@ -1,10 +1,4 @@
-import getFullResponseFromAPI from './1-promise.js';
+import getFullResponseFromAPI from './1-promise';
 
-getFullResponseFromAPI(true)
-  .then(response => console.log(response))
-  .catch(error => console.error(error));
-
-getFullResponseFromAPI(false)
-  .then(response => console.log(response))
-  .catch(error => console.error(error));
-
+console.log(getFullResponseFromAPI(true));
+console.log(getFullResponseFromAPI(false));
